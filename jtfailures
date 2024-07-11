@@ -110,7 +110,7 @@ def list_all(deb):
   errors = [test.strip() for test in errors if errors[test] == 3]
   failures = [test.strip() for test in failures if failures[test] == 3]
 
-  #os.system(f"rm -rf ./temp jta.log")
+  os.system(f"rm -rf ./temp jta.log")
   return errors, failures
 
 def cmd_list_new():
